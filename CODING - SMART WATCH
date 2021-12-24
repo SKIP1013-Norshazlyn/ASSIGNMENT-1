@@ -1,0 +1,39 @@
+package assingment1;
+ 
+import java.util.Scanner;
+ 
+class Bmi {
+ 
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+Scanner input = new Scanner(System.in);
+
+float height;
+float weight;
+float bmi;
+float idealBmi;
+float normalBmi;
+
+System.out.println("Hello! Welcome to BMI tracker");
+System.out.println();
+
+System.out.print("Weight (KG): ");
+weight=input.nextFloat();
+System.out.print("Height (CM): ");
+height=input.nextFloat();
+
+bmi = (100*100*weight)/(height*height);
+
+System.out.printf("Your BMI is %.2f " ,bmi);
+System.out.println();
+
+System.out.print("Ideal BMI: ");
+idealBmi=input.nextFloat();
+
+normalBmi = idealBmi-bmi;
+
+System.out.printf("You need to gain at least %.2f " ,normalBmi,"kg");
+ 
+}
+ 
+}
