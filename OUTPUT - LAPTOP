@@ -1,0 +1,52 @@
+********** Welcome To UUM LTE Communication Enterprise **********
+
+Hello our dear customer, you will be ask to answer the question from three different section.
+
+##### First Section #####
+If you're using our services, please enter the amount of services charge rate per hour as below : 
+Repairing = 50 
+Hardware Installation = 40 
+Antivirus Installation = 80 
+Data Recovery = 50 
+Maintainance = 30
+If you're not using our services, please enter '0' for every services questions : 
+50
+Please enter required hour to finish it : 
+2
+You want it ASAP or not?
+If ASAP, enter '1.5' while if not ASAP, enter '1'
+1.5
+If you need it to be delivered to you, please enter '10'
+But If you want to come to pick it, please enter '0'
+0
+Your services amount will be RM150.0
+
+
+##### Second Section #####
+If you're buying goods, please enter the price : 
+If you're not buying goods from our store, please enter '0' for every goods questions : 
+0
+You want it ASAP/Available/Preorder ?
+If ASAP, enter '1.2' while if Available, enter '1.1' and if Preorder, enter '1'
+0
+If you need it to be delivered to you, please enter '5'
+But If you want to come to pick it, please enter '0'
+0
+Your goods amount will be RM0.00
+
+
+##### Third Section #####
+If you're buying laptop, please enter the price : 
+If you're not buying laptop from our store, please enter '0' for every laptop questions : 
+2599
+You want it ASAP/Available/Preorder ?
+If ASAP, enter '1.2' while if Available, enter '1.1' and if Preorder, enter '1'
+1
+If you need it to be delivered to you, please enter '10'
+But If you want to come to pick it, please enter '0'
+10
+Your laptop amount will be RM2609.00
+
+Your total amount will be RM2759.00
+
+***** Thank you for choosing UUM LTE Communication Enterprise. *****
