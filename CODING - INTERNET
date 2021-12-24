@@ -1,0 +1,99 @@
+package ASSGNMT1;
+import java.util.Scanner;
+public class internet {
+
+	public static void main(String[] args) 
+	{
+		Scanner in = new Scanner(System.in);
+		
+		double a,b,c,d,e,f,g,h;
+		double totalData;
+		double data,time,speed;
+		String telco;
+		int member, country;
+		double purchase,pay,lastpay;
+		
+		
+		System.out.println("****************** SYSTEM TO CALCULATE DATA ******************");
+		System.out.println(" ");
+		System.out.println("Enter value for each activities");
+		System.out.println(" ");
+		System.out.print("1-One web page visit = 1MB : ");
+		a = in.nextDouble();
+		System.out.print("2-One song (uploaded or downloaded) = 5.7MB : ");
+		b = in.nextDouble();
+		System.out.print("3-One minute of streaming audio = 0.7MB : ");
+		c = in.nextDouble();
+		System.out.print("4-One email (text only) = 0.035MB :");
+		d = in.nextDouble();
+		System.out.print("5-One email with attachment = 3MB : ");
+		e = in.nextDouble();
+		System.out.print("6-One minute of online gaming = 0.33MB : ");
+		f = in.nextDouble();
+		System.out.print("7-One minute of streaming high resolution video = 5.88MB : ");
+		g = in.nextDouble();
+		System.out.print("8-One photo (uploaded or downloaded) = 3MB : ");
+		h = in.nextDouble();
+		System.out.println(" ");
+		totalData= (a*1)+(b*5.7)+(c*0.7)+(d*0.035)+(e*3)+(f*0.33)+(g*5.88)+(h*3);
+		System.out.printf("Total data usage are: %.2f MB" ,totalData);
+		
+		System.out.println(" ");
+		
+        System.out.println("*****This is to calculate internet speed in Mbps*****");
+		System.out.println(" ");
+		System.out.print("Enter data usage in Mega byte: ");
+		data = in.nextDouble();
+		System.out.print("Enter time in minute: ");
+		time = in.nextDouble();
+		speed = data / (time * 60 ) ;
+		System.out.println(" ");
+		System.out.printf("This is your internet speed: %.2f" ,speed);
+		System.out.println(" ");
+		
+		System.out.println("**************************************************************************");
+		System.out.println("       List of internet coverage by descending order for each state"        );
+		System.out.println("**************************************************************************");
+		System.out.println("Johor           = Digi    | Umobile | Maxis   | Unifi   | Celcom  | Yes");
+		System.out.println("Kedah           = Umobile | Digi    | Maxis   | Celcom  | Unifi   | Yes");
+		System.out.println("Kelantan        = Maxis   | Digi    | Umobil  | Unifi   | Yes     | Celcom");
+		System.out.println("Kuala Lumpur    = Maxis   | Celcom  | Digi    | Umobile | Unifi   | Yes");
+		System.out.println("Melaka          = Digi    | Maxis   | Umobile | Celcom  | Unifi   | Yes");
+		System.out.println("Negeri Sembilan = Digi    | Maxis   | Umobile | Unifi   | Yes     | Celcom");
+		System.out.println("Pahang          = Digi    | Maxis   | Umobile | Yes     | Celcom  | Unifi");
+		System.out.println("Perak           = Digi    | Maxis   | Umobile | Unifi   | Celcom  | Yes");
+		System.out.println("Perlis          = Umobile | Digi    | Maxis   | Celcom  | Unifi   | ");
+		System.out.println("Pulau Pinang    = Digi    | Maxis   | Umobile | Celcom  | Unifi   | Yes");
+		System.out.println("Sabah           = Digi    | Umobile | Maxis   | Unifi   | Yes     | Celcom");
+		System.out.println("Sarawak         = Digi    | Maxis   | Umobile | Unifi   | Celcom  | ");
+		System.out.println("Selangor        = Maxis   | Digi    | Umobile | Celcom  | Unifi   | Yes");
+		System.out.println("Terangganu      = Maxis   | Digi    | Umobile | Unifi   | Celcom  | Yes");
+		System.out.println("");
+		System.out.print("Are you a member? yes (1) / no (0) : " );
+		member = in.nextInt();
+		
+		System.out.print("Are you in Malaysia? yes(0) / no (1) : ");
+		country = in.nextInt();
+		
+		System.out.println("This are list of internet plan that you can purchase"); 
+		System.out.println(" ");
+		System.out.println(" Weekly plan");
+		System.out.println(" WA-100 MB = RM 18");
+		System.out.println(" WB-250 MB = RM 18");
+		
+		System.out.println(" Monthly plan");
+		System.out.println(" MA-500 MB = RM 68");
+		System.out.println(" MB-1.5 GB = RM 88");
+		System.out.println(" M3-3 GB = RM 98");
+		System.out.println(" ");
+		System.out.println("Package that you want to purchase(Please type price of plan you want): ");
+		purchase = in.nextDouble();
+		
+		pay =((country*10) + purchase );
+		lastpay = pay - (0.3*(member*5));
+		
+		System.out.printf("Your total payment is RM %.2f" ,lastpay);
+
+	}
+
+}
