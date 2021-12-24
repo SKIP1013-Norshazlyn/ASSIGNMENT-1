@@ -1,0 +1,53 @@
+****************** SYSTEM TO CALCULATE DATA ******************
+ 
+Enter value for each activities
+ 
+1-One web page visit = 1MB : 2
+2-One song (uploaded or downloaded) = 5.7MB : 3
+3-One minute of streaming audio = 0.7MB : 2
+4-One email (text only) = 0.035MB :4
+5-One email with attachment = 3MB : 2
+6-One minute of online gaming = 0.33MB : 1
+7-One minute of streaming high resolution video = 5.88MB : 1
+8-One photo (uploaded or downloaded) = 3MB : 4
+ 
+Total data usage are: 44.85 MB 
+*****This is to calculate internet speed in Mbps*****
+ 
+Enter data usage in Mega byte: 225.3
+Enter time in minute: 15
+ 
+This is your internet speed: 0.25 
+**************************************************************************
+       List of internet coverage by descending order for each state
+**************************************************************************
+Johor           = Digi    | Umobile | Maxis   | Unifi   | Celcom  | Yes
+Kedah           = Umobile | Digi    | Maxis   | Celcom  | Unifi   | Yes
+Kelantan        = Maxis   | Digi    | Umobil  | Unifi   | Yes     | Celcom
+Kuala Lumpur    = Maxis   | Celcom  | Digi    | Umobile | Unifi   | Yes
+Melaka          = Digi    | Maxis   | Umobile | Celcom  | Unifi   | Yes
+Negeri Sembilan = Digi    | Maxis   | Umobile | Unifi   | Yes     | Celcom
+Pahang          = Digi    | Maxis   | Umobile | Yes     | Celcom  | Unifi
+Perak           = Digi    | Maxis   | Umobile | Unifi   | Celcom  | Yes
+Perlis          = Umobile | Digi    | Maxis   | Celcom  | Unifi   | 
+Pulau Pinang    = Digi    | Maxis   | Umobile | Celcom  | Unifi   | Yes
+Sabah           = Digi    | Umobile | Maxis   | Unifi   | Yes     | Celcom
+Sarawak         = Digi    | Maxis   | Umobile | Unifi   | Celcom  | 
+Selangor        = Maxis   | Digi    | Umobile | Celcom  | Unifi   | Yes
+Terangganu      = Maxis   | Digi    | Umobile | Unifi   | Celcom  | Yes
+
+Are you a member? yes (1) / no (0) : 1
+Are you in Malaysia? yes(0) / no (1) : 0
+This are list of internet plan that you can purchase
+ 
+ Weekly plan
+ WA-100 MB = RM 18
+ WB-250 MB = RM 18
+ Monthly plan
+ MA-500 MB = RM 68
+ MB-1.5 GB = RM 88
+ M3-3 GB = RM 98
+ 
+Package that you want to purchase(Please type price of plan you want): 
+68
+Your total payment is RM 66.50
