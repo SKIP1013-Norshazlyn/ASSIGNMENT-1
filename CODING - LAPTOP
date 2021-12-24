@@ -1,0 +1,115 @@
+1.	package myAssigment1;
+2.	
+3.	import java.util.Scanner;
+4.	
+5.	class Assignment1 {
+6.	
+7.		public static void main(String[] args) {
+8.			Scanner in=new Scanner(System.in);
+9.			
+10.			int hour, services;
+11.			int goods;
+12.			double laptop;
+13.			double customertype,goodscond,laptopcond,shipping;
+14.			double servicesfees,goodsfees,laptopfees;
+15.			double totalfees;
+16.			
+17.			System.out.println("********** Welcome To UUM LTE Communication 
+             Enterprise **********");
+18.			System.out.println();
+19.			System.out.println("Hello our dear customer, you will be ask to  
+             answer the question from three different section.");
+20.			System.out.println();
+21.			
+22.			System.out.println("##### First Section #####");
+23.			System.out.println("If you're using our services, please enter 
+ 		the amount of services charge rate per hour as below : ");
+24.			System.out.println("Repairing = 50 \nHardware Installation = 40 
+    \nAntivirus Installation = 80 \nData Recovery = 50 \nMaintainance = 30");
+25.			System.out.println("If you're not using our services, please 
+             enter '0' for every services questions : ");
+26.			services=in.nextInt();
+27.			
+28.			
+29.			System.out.println("Please enter required hour to finish it : ");
+30.			hour=in.nextInt();
+31.			
+32.			System.out.println("You want it ASAP or not?");
+33.			System.out.println("If ASAP, enter '1.5' while if not ASAP, enter 
+             '1'");
+34.			customertype=in.nextDouble();
+35.			
+36.			System.out.println("If you need it to be delivered to you, please 
+             enter '10'");
+37.			System.out.println("But If you want to come to pick it, please 
+enter '0'");
+38.			shipping=in.nextDouble();
+39.			
+40.			servicesfees=hour*services*customertype+shipping;
+41.			
+42.			System.out.println("Your services amount will be RM" + 
+             servicesfees);
+43.			System.out.println();
+44.			
+45.			System.out.println("\n##### Second Section #####");
+46.			System.out.println("If you're buying goods, please enter the 
+             price : ");
+47.			System.out.println("If you're not buying goods from our store, 
+             please enter '0' for every goods questions : ");
+48.			goods=in.nextInt();
+49.			
+50.			System.out.println("You want it ASAP/Available/Preorder ?");
+51.			System.out.println("If ASAP, enter '1.2' while if Available, 
+             enter '1.1' and if Preorder, enter '1'");
+52.			goodscond=in.nextDouble();
+53.			
+54.			System.out.println("If you need it to be delivered to you, please 
+             enter '5'");
+55.			System.out.println("But If you want to come to pick it, please 
+             enter '0'");
+56.			shipping=in.nextDouble();
+57.			
+58.			goodsfees=goods*goodscond+shipping;
+59.			
+60.			System.out.printf("Your goods amount will be RM%.2f" , 
+             goodsfees);
+61.			System.out.println();
+62.			System.out.println();
+63.			
+64.			System.out.println("\n##### Third Section #####");
+65.			System.out.println("If you're buying laptop, please enter the 
+             price : ");
+66.			System.out.println("If you're not buying laptop from our store, 
+             please enter '0' for every laptop questions : ");
+67.			laptop=in.nextDouble();
+68.			
+69.			System.out.println("You want it ASAP/Available/Preorder ?");
+70.			System.out.println("If ASAP, enter '1.2' while if Available, 
+             enter '1.1' and if Preorder, enter '1'");
+71.			laptopcond=in.nextDouble();
+72.					
+73.			System.out.println("If you need it to be delivered to you, please 
+             enter '10'");
+74.			System.out.println("But If you want to come to pick it, please 
+             enter '0'");
+75.			shipping=in.nextDouble();
+76.			
+77.			laptopfees=laptop*laptopcond+shipping;
+78.			
+79.			System.out.printf("Your laptop amount will be RM%.2f" , 
+             laptopfees);
+80.			System.out.println();
+81.			
+82.			totalfees=servicesfees+goodsfees+laptopfees;
+83.			System.out.printf("\nYour total amount will be RM%.2f" , 
+             totalfees);
+84.			System.out.println();
+
+85.			System.out.println("\n***** Thank you for choosing UUM LTE 
+             Communication Enterprise. *****");
+86.			
+87.			
+88.	
+89.		}
+90.	
+91.	}
