@@ -1,0 +1,74 @@
+package communication;
+
+import java.util.Scanner;
+
+public class television {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Scanner declaration to input
+		Scanner sc = new Scanner(System.in);
+		
+		//Variable declaration
+		int staffID ;
+		String brand,type;
+		double oriprice, moneypaid, custprice, installprice, totalprice, profitprice, balance;
+		
+		//Staff key-in the staff ID, brand, type and the original price
+		System.out.println("Welcome to the Jack’s TV system");
+		System.out.println("Please insert your staff ID: ");
+		staffID = sc.nextInt();
+		System.out.println("Please enter the brand of the television: ");
+		brand = sc.next();
+		System.out.println("Please enter the type of the television: ");
+		type = sc.next();
+		System.out.println("Please enter the original price of the television: ");
+		oriprice = sc.nextDouble();
+		
+		//System calculate the profit price 
+		profitprice = oriprice * 0.15;
+		//System calculate the 5% installation charge
+	    installprice = oriprice * 0.05;
+	    //System calculate the customer price
+		custprice = oriprice + profitprice;
+		//System calculate the total price that must been paid by the customer
+		totalprice = installprice + custprice;
+		
+		//System showed the total must been paid by the customer
+		System.out.printf("The total price must been paid : RM  %.2f ", totalprice);
+		System.out.println("");
+		
+		//Staff key-in money paid by the customer
+		System.out.println("Please enter the amount paid: RM ");
+		moneypaid = sc.nextDouble();
+		
+		//System calculate the balance for the customer
+		balance = moneypaid-totalprice;
+		
+
+		//The system printout the receipt
+		System.out.println("************************************************");
+		System.out.println("Welcome to the Jack’s TV");
+		System.out.println("************************************************");
+		
+		System.out.println("Staff ID : " + staffID);
+		System.out.println("Television Brand: " + brand);
+		System.out.println("Television Type: " + type);
+		System.out.printf("The price of the television is :RM  %.2f ", custprice);
+		System.out.print("\n");
+		System.out.printf("The installation charge is :RM  %.2f ", installprice);
+		System.out.print("\n");
+		System.out.println("-------------------------------------------------");
+		System.out.printf("The total price must been paid :RM  %.2f ", totalprice);
+		System.out.print("\n");
+		System.out.println("-------------------------------------------------");
+		System.out.printf("The money paid by the customer: RM  %.2f ", moneypaid);
+		System.out.print("\n");
+		System.out.printf("The balance for the customer is: RM  %.2f ", balance);
+		System.out.print("\n");
+		System.out.println("Thank you for choosing Jack’s TV");
+		
+	}
+	
+
+}
