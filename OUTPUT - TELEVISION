@@ -1,0 +1,27 @@
+
+Welcome to the Jack’s TV system
+Please insert your staff ID: 
+12345
+Please enter the brand of the television: 
+SAMSUNG
+Please enter the type of the television: 
+SMART
+Please enter the original price of the television: 
+2999.00
+The total price must been paid : RM  3598.80 
+Please enter the amount paid: RM 
+4000.00
+************************************************
+Welcome to the Jack’s TV
+************************************************
+Staff ID : 12345
+Television Brand: SAMSUNG
+Television Type: SMART
+The price of the television is :RM  3448.85 
+The installation charge is :RM  149.95 
+-------------------------------------------------
+The total price must been paid :RM  3598.80 
+-------------------------------------------------
+The money paid by the customer: RM  4000.00 
+The balance for the customer is: RM  401.20 
+Thank you for choosing Jack’s TV
